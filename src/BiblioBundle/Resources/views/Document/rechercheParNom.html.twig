@@ -1,0 +1,31 @@
+<h1>Recherche d'un document par Nom</h1>
+
+<form action="" method="POST">
+    Recherche : <input type="text" name="input_recherche"/>
+    <input type="submit" name="recherche" value="Rechercher"/>
+</form>
+
+{% if documents is empty %}
+
+    Aucun document trouvé
+
+{% else %}
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>nom</th>
+            <th>date</th>
+            <th>auteur</th>
+            <th>type</th>
+        </tr>
+        {% for document in documents %}
+            <tr>
+                <td>{{ document.id }}</td>
+                <td>{{ document.nom }}</td>
+                <td>{{ document.date|date('Y-m-d') }}</td>
+                <td>{{ document.auteur }}</td>
+                <td>{{ document.type }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endif %}

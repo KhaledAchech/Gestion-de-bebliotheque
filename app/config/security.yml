@@ -1,0 +1,40 @@
+# To get started with security, check out the documentation:
+# https://symfony.com/doc/current/security.html
+security:
+    encoders:
+        BiblioBundle\Entity\User:
+          algorithm: bcrypt
+    # https://symfony.com/doc/current/security.html#b-configuring-how-users-are-loaded
+    providers:
+        in_memory: { memory: null}
+        in_database:
+            entity:
+                class: BiblioBundle\Entity\User
+                property: email
+    firewalls:
+        # disables authentication for assets and the profiler, adapt it according to your needs
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        main:
+            anonymous: ~
+            provider : in_database
+            form_login:
+                login_path: biblio_connexion_user
+                check_path: biblio_connexion_user
+            logout:
+                path: biblio_deconnexion_user
+                target: biblio_affichage_document
+            # activate different ways to authenticate
+            #logout_on_user_change: true
+            # https://symfony.com/doc/current/security.html#a-configuring-how-your-users-will-authenticate
+            #http_basic: ~
+
+            # https://symfony.com/doc/current/security/form_login_setup.html
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN }
+        # - { path: ^/profile, roles: ROLE_USER }
+    role_hierarchy:
+        ROLE_EDITOR: ROLE_USER
+        ROLE_ADMIN:  ROLE_EDITOR

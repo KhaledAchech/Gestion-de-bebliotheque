@@ -1,0 +1,88 @@
+biblio_homepage:
+    path:     /
+    defaults: { _controller: BiblioBundle:Default:index }
+
+biblio_affichage_document:
+    path: /listDocument
+    defaults: { _controller : BiblioBundle:Document:list }
+
+biblio_affichage_documentparType:
+    path: /listDocumentparType/{type}
+    defaults: { _controller : BiblioBundle:Document:listParType }
+
+biblio_affichage_documentparDate:
+    path: /listDocumentparDate/{date}
+    defaults: { _controller : BiblioBundle:Document:listParDate }
+
+biblio_affichage_documentparAuteur:
+    path: /listDocumentparAuteur/{auteur}
+    defaults: { _controller : BiblioBundle:Document:listParAuteur }
+
+biblio_recherche_documentparNom:
+    path : /rechercherParNom
+    defaults: { _controller: BiblioBundle:Document:rechercheParNom }
+
+biblio_recherche_documentparType:
+    path : /rechercherParType
+    defaults: { _controller: BiblioBundle:Document:rechercheParType }
+
+biblio_recherche_documentparDate:
+    path : /rechercherParDate
+    defaults: { _controller: BiblioBundle:Document:rechercheParDate }
+
+biblio_recherche_documentparAuteur:
+    path : /rechercherParAuteur
+    defaults: { _controller: BiblioBundle:Document:rechercheParAuteur }
+
+biblio_inscription_user:
+    path: /registration
+    defaults: { _controller: BiblioBundle:Security:Registration }
+
+biblio_connexion_user:
+    path: /login
+    defaults: { _controller: BiblioBundle:Security:Login }
+
+biblio_deconnexion_user:
+    path: /logout
+    defaults: { _controller: BiblioBundle:Security:Logout }
+
+admin:
+    path: /admin/adminIndex
+    defaults: { _controller: BiblioBundle:Admin:index }
+
+admin_listUsers:
+    path: /admin/adminlistUsers
+    defaults: { _controller: BiblioBundle:Admin:listUsers }
+
+admin_updateUsers:
+    path: /admin/adminUpdateUser/{id}
+    defaults: { _controller: BiblioBundle:Admin:updateUser }
+
+admin_deleteUsers:
+    path: /admin/adminDeleteUser/{id}
+    defaults: { _controller: BiblioBundle:Admin:deleteUser }
+
+biblio_ajout_document:
+    path: /admin/addDocument
+    defaults: { _controller: BiblioBundle:Document:add }
+
+biblio_modifier_docuement:
+    path: /admin/updateDocument/{id}
+    defaults: { _controller: BiblioBundle:Document:update }
+
+biblio_supprimer_docuement:
+    path: /admin/deletedocument/{id}
+    defaults: { _controller: BiblioBundle:Document:delete }
+
+admin_listDocuments:
+    path: /admin/adminlistDocument
+    defaults: { _controller: BiblioBundle:Admin:listDocument }
+
+user_modifyAccount:
+    path: /modifyAccount
+    defaults : { _controller: BiblioBundle:User:ModifyAccount }
+
+send_message_toAdmin:
+    path: /sendMessage
+    defaults : { _controller: BiblioBundle:User:SendMessage }
+

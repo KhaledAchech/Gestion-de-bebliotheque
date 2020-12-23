@@ -1,0 +1,19 @@
+<h1>Liste des Documents par Date</h1>
+<table border = "1">
+    <tr>
+        <td>id</td>
+        <td>nom</td>
+        <td>date</td>
+        <td>auteur</td>
+        <td>type</td>
+    </tr>
+    {% for document in documents %}
+        <tr>
+            <td>{{ document.id }}</td>
+            <td>{{ document.nom }}</td>
+            <td>{{ document.date|date('Y-m-d') }}</td>
+            <td>{{ document.auteur }}</td>
+            <td>{{ document.type }}</td>
+        </tr>
+    {% endfor %}
+</table>

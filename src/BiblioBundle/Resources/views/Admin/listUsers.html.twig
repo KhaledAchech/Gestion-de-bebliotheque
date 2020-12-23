@@ -1,0 +1,27 @@
+<h1>Liste des Utilisateurs</h1>
+<table border = "1">
+    <tr>
+        <td>id</td>
+        <td>email</td>
+        <td>roles</td>
+    </tr>
+    {% for user in users %}
+        <tr>
+            <td>{{ user.id }}</td>
+            <td>{{ user.email }}</td>
+            <td>
+                {% for role in user.roles %}
+                    {% if role == "ROLE_USER" %}
+                        Utilisateur
+                    {% elseif role == "ROLE_EDITOR" %}
+                        Editeur
+                    {% elseif role == "ROLE_ADMIN" %}
+                        Administrateur
+                {% endif %}
+                {% endfor %}
+            </td>
+            <td><a href = "{{ path ("admin_updateUsers",{'id': user.id })}}"> modifier </a></td>
+            <td><a href = "{{ path ("admin_deleteUsers",{'id': user.id })}}"> Supprimer </a></td>
+        </tr>
+    {% endfor %}
+</table>
