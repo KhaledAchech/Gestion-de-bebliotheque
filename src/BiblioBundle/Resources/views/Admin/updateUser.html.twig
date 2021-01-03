@@ -1,6 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
 <h1> Mise à jour d'un Utilisateur </h1>
 
 <form action="" method="POST">
     {{ form_widget(editForm) }}
-    <input type="submit"/>
+    <input class ="btn btn-success" type="submit"/>
+    <a  class="btn btn-dark" href="{{ path ("biblio_affichage_document")}}"> Retour </a>
 </form>
+{% endblock %}

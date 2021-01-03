@@ -31,10 +31,42 @@ class Emprunter
 
 
     /**
-     * @ORM\ManyToOne(targetEntity="Adherent")
+     * @ORM\ManyToOne(targetEntity="User")
      * @ORM\JoinColumn(name="adherent_id", referencedColumnName="id")
      */
-    private $emprunter_Document;
+    private $emprunteur;
+
+    /**
+     * @return mixed
+     */
+    public function getEmprunteur()
+    {
+        return $this->emprunteur;
+    }
+
+    /**
+     * @param mixed $emprunteur
+     */
+    public function setEmprunteur($emprunteur)
+    {
+        $this->emprunteur = $emprunteur;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getDocumentEmprunte()
+    {
+        return $this->Document_emprunte;
+    }
+
+    /**
+     * @param mixed $Document_emprunte
+     */
+    public function setDocumentEmprunte($Document_emprunte)
+    {
+        $this->Document_emprunte = $Document_emprunte;
+    }
 
     /**
      * @ORM\ManyToOne(targetEntity="Document")

@@ -1,8 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
 <h1>Recherche d'un document par Auteur</h1>
 
 <form action="" method="POST">
-    Recherche : <input type="text" name="input_recherche"/>
-    <input type="submit" name="recherche" value="Rechercher"/>
+    <div class="col">
+        <div class="form-group">
+            Recherche par Auteur: <input type="text" name="input_recherche"/>
+                <input class ="btn btn-success" type="submit" name="recherche" value="Rechercher"/>
+        </div>
+    </div>
 </form>
 
 {% if documents is empty %}
@@ -10,7 +16,7 @@
     Aucun document pour ce auteur a été trouvé
 
 {% else %}
-    <table border="1">
+    <table border="1" class="table table-striped">
         <tr>
             <th>id</th>
             <th>nom</th>
@@ -25,7 +31,11 @@
                 <td>{{ document.date|date('Y-m-d') }}</td>
                 <td>{{ document.auteur }}</td>
                 <td>{{ document.type }}</td>
+                <td><a class="btn btn-dark" href = "{{ path ("biblio_emprunter_document" ,{'id': document.id })}}"> emprunter </a></td>
+                <td><a class ="btn btn-success" href = "{{ path ("biblio_modifier_docuement" ,{'id': document.id })}}"> modifier </a></td>
+                <td><a class="btn btn-danger" onclick="return confirm('Etes-vous sûr de supprimer cet document?');" href = "{{ path ("biblio_supprimer_docuement" ,{'id': document.id })}}"> Supprimer </a></td>
             </tr>
         {% endfor %}
     </table>
 {% endif %}
+{% endblock %}

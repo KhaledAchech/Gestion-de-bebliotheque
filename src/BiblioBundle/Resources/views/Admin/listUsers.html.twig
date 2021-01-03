@@ -1,9 +1,11 @@
+{% extends 'base.html.twig' %}
+{% block body %}
 <h1>Liste des Utilisateurs</h1>
-<table border = "1">
+<table border = "1" class="table table-striped">
     <tr>
-        <td>id</td>
-        <td>email</td>
-        <td>roles</td>
+        <th>id</th>
+        <th>email</th>
+        <th>roles</th>
     </tr>
     {% for user in users %}
         <tr>
@@ -20,8 +22,9 @@
                 {% endif %}
                 {% endfor %}
             </td>
-            <td><a href = "{{ path ("admin_updateUsers",{'id': user.id })}}"> modifier </a></td>
-            <td><a href = "{{ path ("admin_deleteUsers",{'id': user.id })}}"> Supprimer </a></td>
+            <td><a class ="btn btn-success" href = "{{ path ("admin_updateUsers",{'id': user.id })}}"> modifier </a></td>
+            <td><a class="btn btn-danger" onclick="return confirm('Etes-vous sûr de supprimer cet utilisateur?');" href = "{{ path ("admin_deleteUsers",{'id': user.id })}}"> Supprimer </a></td>
         </tr>
     {% endfor %}
 </table>
+{% endblock %}

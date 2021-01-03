@@ -29,6 +29,7 @@ class SecurityController extends Controller
             $hash= $passwordEncoder->encodePassword($user, $user->getPassword());
             $user->setPassword($hash);
             $em = $this->getDoctrine()->getManager();
+            $user->setRoles(["ROLE_USER","ROLE_EDITOR"]);
             $em->persist($user);
             $em->flush();
             return $this->redirect($this->generateUrl("biblio_affichage_document"));

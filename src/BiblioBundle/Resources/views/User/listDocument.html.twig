@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-<h1>Liste des Documents par Type</h1>
+<h1>Liste des Documents</h1>
 <table border = "1">
     <tr>
         <td>id</td>
@@ -16,6 +16,7 @@
             <td>{{ document.date|date('Y-m-d') }}</td>
             <td>{{ document.auteur }}</td>
             <td>{{ document.type }}</td>
+            <td><a href = "{{ path ("biblio_emprunter_document",{'id': document.id })}}"> emprunter </a></td>
         </tr>
     {% endfor %}
 </table>

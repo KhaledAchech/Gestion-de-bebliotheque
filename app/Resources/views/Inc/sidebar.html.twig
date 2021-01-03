@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <!-- Sidebar -->
+    <nav id="sidebar">
+
+
+        <ul class="list-unstyled components">
+            <li class="active">
+                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Recherche</a>
+                <ul class="collapse list-unstyled" id="homeSubmenu">
+                    <li>
+                        <a href = "{{ path ("biblio_recherche_documentparAuteur")}}">Recherche par Auteur</a>
+                    </li>
+                    <li>
+                        <a href= "{{ path ("biblio_recherche_documentparType")}}">Recherche par Type</a>
+                    </li>
+                    <li>
+                        <a href = "{{ path ("biblio_recherche_documentparNom")}}">Recherche par Nom</a>
+                    </li>
+                    <li>
+                        <a href = "{{ path ("biblio_recherche_documentparDate")}}">Recherche par Date</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="{{ path ("user_modifyAccount")}}">Modifier votre compte</a>
+            </li>
+            <li>
+                <a href = "{{ path ("send_message_toAdmin")}}">Contacter l'admin</a>
+            </li>
+        </ul>
+    </nav>
+
+</div>

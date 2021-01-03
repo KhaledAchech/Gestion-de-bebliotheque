@@ -1,1 +1,5 @@
-Welcome to our website !
+{% extends 'base.html.twig' %}
+{% block title%}Bienvenue!{% endblock %}
+{% block body %}
+<a href = "{{ path ("biblio_deconnexion_user")}}"> Deconnexion </a>
+{% endblock %}

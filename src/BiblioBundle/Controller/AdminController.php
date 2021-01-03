@@ -37,7 +37,7 @@ class AdminController extends Controller
         ));
     }
 
-    //mise à jour d'un  document
+    //mise à jour d'un  user
     public function updateUserAction(Request $request, $id)
     {
         $em = $this->getDoctrine()->getManager();

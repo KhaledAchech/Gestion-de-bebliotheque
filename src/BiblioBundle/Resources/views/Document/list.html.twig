@@ -1,11 +1,13 @@
+{% extends 'base.html.twig' %}
+{% block body %}
 <h1>Liste des Documents</h1>
-<table border = "1">
+<table border = "1" class="table table-striped">
     <tr>
-        <td>id</td>
-        <td>nom</td>
-        <td>date</td>
-        <td>auteur</td>
-        <td>type</td>
+        <th>Id</th>
+        <th>Nom</th>
+        <th>Date</th>
+        <th>Auteur</th>
+        <th>Type</th>
     </tr>
     {% for document in documents %}
     <tr>
@@ -14,6 +16,10 @@
         <td>{{ document.date|date('Y-m-d') }}</td>
         <td>{{ document.auteur }}</td>
         <td>{{ document.type }}</td>
+        <td><a class="btn btn-dark" href = "{{ path ("biblio_emprunter_document" ,{'id': document.id })}}"> emprunter </a></td>
+        <td><a class ="btn btn-success" href = "{{ path ("biblio_modifier_docuement" ,{'id': document.id })}}"> modifier </a></td>
+        <td><a class="btn btn-danger" onclick="return confirm('Etes-vous sûr de supprimer cet document?');" href = "{{ path ("biblio_supprimer_docuement" ,{'id': document.id })}}"> Supprimer </a></td>
     </tr>
     {% endfor %}
 </table>
+{% endblock %}

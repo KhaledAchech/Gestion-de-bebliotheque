@@ -1,0 +1,27 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
+<div class = "container">
+    <a  href="{{ path ("biblio_affichage_document")}}" class = "navbar-brand" > Bibliothéque Tek up</a>
+    <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#mobile-nav">
+    <span class="navbar-toggle-icon">
+    </span>
+    </button>
+    <div class="collapse navbar-collapse" id="mobile-nav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a href="{{ path ("biblio_ajout_document")}}" class="nav-link">Ajouter Document</a>
+            </li >
+            <li class="nav-item">
+            <a href="{{ path ("admin_listUsers")}}" class="nav-link">Consulter les utilisateurs</a>
+            </li>
+            <li class="nav-item">
+                <a href="#" class="nav-link">Consulter les emprunts</a>
+            </li>
+            <li class="nav-item">
+                <a href = "{{ path ("biblio_deconnexion_user")}}" class="nav-link"> Deconnexion </a>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+</nav>

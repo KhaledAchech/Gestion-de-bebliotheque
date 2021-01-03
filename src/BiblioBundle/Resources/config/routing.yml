@@ -79,10 +79,14 @@ admin_listDocuments:
     defaults: { _controller: BiblioBundle:Admin:listDocument }
 
 user_modifyAccount:
-    path: /modifyAccount
+    path: /etudiant/modifyAccount
     defaults : { _controller: BiblioBundle:User:ModifyAccount }
 
 send_message_toAdmin:
-    path: /sendMessage
+    path: /etudiant/sendMessage
     defaults : { _controller: BiblioBundle:User:SendMessage }
+
+biblio_emprunter_document:
+    path: /etudiant/empruntDocument
+    defaults: { _controller: BiblioBundle:User:empruntDocument }
 
