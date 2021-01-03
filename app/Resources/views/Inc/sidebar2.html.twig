@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: "Lato", sans-serif;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 160px;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #222222;
+            overflow-x: hidden;
+            padding-top: 15px;
+        }
+
+        .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #f6f6f6;
+            display: block;
+        }
+
+        .sidenav a:hover {
+            color: #14A76C;
+        }
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {padding-top: 15px;}
+            .sidenav a {font-size: 12px;}
+        }
+    </style>
+</head>
+<body>
+
+<div class="sidenav">
+    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Recherche</a>
+    <ul class="collapse list-unstyled" id="homeSubmenu">
+        <li>
+            <a href = "{{ path ("biblio_recherche_documentparAuteur")}}">Recherche par Auteur</a>
+        </li>
+        <li>
+            <a href= "{{ path ("biblio_recherche_documentparType")}}">Recherche par Type</a>
+        </li>
+        <li>
+            <a href = "{{ path ("biblio_recherche_documentparNom")}}">Recherche par Nom</a>
+        </li>
+        <li>
+            <a href = "{{ path ("biblio_recherche_documentparDate")}}">Recherche par Date</a>
+        </li>
+    </ul>
+    <a href="{{ path ("user_modifyAccount")}}">Modifier votre compte</a>
+    <a href = "{{ path ("send_message_toAdmin")}}">Contact</a>
+</div>
+
+</body>
+</html>

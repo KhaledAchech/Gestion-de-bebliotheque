@@ -3,33 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="bec842ac-f1e2-4f4c-999f-1ce9de6ced91" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Resources/views/Inc/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/Inc/navbar.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/config/security.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/config/security.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Entity/Emprunter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Entity/Emprunter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/listDocument.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/listDocument.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/listUsers.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/listUsers.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/updateUser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Admin/updateUser.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Connection/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Connection/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Connection/registration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Connection/registration.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Default/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Default/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/add.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/add.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/list.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/listAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/listAuteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/listDate.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/listDate.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/listType.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/listType.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParAuteur.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParDate.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParDate.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParNom.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParNom.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParType.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParType.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/update.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/SendMessage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/SendMessage.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/modifyAccount.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/modifyAccount.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +132,7 @@
       <workItem from="1608490289539" duration="3896000" />
       <workItem from="1608542518857" duration="14399000" />
       <workItem from="1609606319433" duration="12029000" />
-      <workItem from="1609663703318" duration="15921000" />
+      <workItem from="1609663703318" duration="21428000" />
     </task>
     <servers />
   </component>
@@ -194,22 +172,22 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="531" y="286" key="FrameworkEditDialogDimensionKey/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1606762696551" />
-    <state width="1491" height="212" key="GridCell.Tab.0.bottom" timestamp="1609682813254">
+    <state width="1491" height="212" key="GridCell.Tab.0.bottom" timestamp="1609683115092">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1491" height="212" key="GridCell.Tab.0.bottom/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609682813254" />
-    <state width="1491" height="212" key="GridCell.Tab.0.center" timestamp="1609682813254">
+    <state width="1491" height="212" key="GridCell.Tab.0.bottom/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609683115092" />
+    <state width="1491" height="212" key="GridCell.Tab.0.center" timestamp="1609683115091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1491" height="212" key="GridCell.Tab.0.center/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609682813254" />
-    <state width="1491" height="212" key="GridCell.Tab.0.left" timestamp="1609682813254">
+    <state width="1491" height="212" key="GridCell.Tab.0.center/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609683115091" />
+    <state width="1491" height="212" key="GridCell.Tab.0.left" timestamp="1609683115091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1491" height="212" key="GridCell.Tab.0.left/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609682813254" />
-    <state width="1491" height="212" key="GridCell.Tab.0.right" timestamp="1609682813254">
+    <state width="1491" height="212" key="GridCell.Tab.0.left/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609683115091" />
+    <state width="1491" height="212" key="GridCell.Tab.0.right" timestamp="1609683115091">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1491" height="212" key="GridCell.Tab.0.right/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609682813254" />
+    <state width="1491" height="212" key="GridCell.Tab.0.right/-1920.0.1536.834/0.0.1536.834@0.0.1536.834" timestamp="1609683115091" />
     <state x="328" y="135" key="NewPhpClassDialog" timestamp="1609606757624">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
