@@ -7,6 +7,7 @@
     </button>
     <div class="collapse navbar-collapse" id="mobile-nav">
         <ul class="navbar-nav ml-auto">
+            {% if is_granted('ROLE_ADMIN') %}
             <li class="nav-item">
                 <a href="{{ path ("biblio_ajout_document")}}" class="nav-link">Ajouter Document</a>
             </li >
@@ -22,10 +23,16 @@
             <li class="nav-item">
                 <a href="{{ path ("admin_listEmprunts")}}" class="nav-link">Les emprunts</a>
             </li>
-            <li class="nav-item">
-                <a href = "{{ path ("biblio_deconnexion_user")}}" class="nav-link"> Deconnexion </a>
-            </li>
-
+            {% endif %}
+            {% if not app.user %}
+                <li class="nav-item">
+                    <a href="{{ path('biblio_connexion_user')}}" class="nav-link">Connexion </a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a href = "{{ path ("biblio_deconnexion_user")}}" class="nav-link"> Deconnexion </a>
+                </li>
+            {% endif %}
         </ul>
     </div>
 </div>

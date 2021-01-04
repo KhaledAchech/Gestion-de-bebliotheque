@@ -1,4 +1,6 @@
 {% extends 'base.html.twig' %}
 {% block body %}
+    {% if is_granted('ROLE_EDITOR') %}
 <A class="btn btn-primary" HREF="mailto:admin@BiblioAdmin.com">contacter l'admin</A>
+    {% endif %}
 {% endblock %}

@@ -14,6 +14,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 class UserController extends Controller
 {
+
     //modifier son compte
     public function ModifyAccountAction(Request $request)
     {
@@ -40,6 +41,7 @@ class UserController extends Controller
         ));
 
     }
+
 
     //envoyer un message
     public function SendMessageAction()

@@ -16,9 +16,13 @@
         <td>{{ document.date|date('Y-m-d') }}</td>
         <td>{{ document.auteur }}</td>
         <td>{{ document.type }}</td>
+        {% if is_granted('ROLE_EDITOR') %}
         <td><a class="btn btn-dark" href = "{{ path ("biblio_emprunter_document" ,{'id': document.id })}}"> emprunter </a></td>
+        {% endif %}
+        {% if is_granted('ROLE_ADMIN') %}
         <td><a class ="btn btn-success" href = "{{ path ("biblio_modifier_docuement" ,{'id': document.id })}}"> modifier </a></td>
         <td><a class="btn btn-danger" onclick="return confirm('Etes-vous sûr de supprimer cet document?');" href = "{{ path ("biblio_supprimer_docuement" ,{'id': document.id })}}"> Supprimer </a></td>
+        {% endif %}
     </tr>
     {% endfor %}
 </table>

@@ -16,8 +16,10 @@
                 <td>{{ emprunt.date_retour|date('Y-m-d') }}</td>
                 <td>{{ emprunt.emprunteur.email }}</td>
                 <td>{{ emprunt.Document_emprunte.nom }}</td>
+                {% if is_granted('ROLE_ADMIN') %}
                 <td><a class ="btn btn-success" href = "{{ path ("admin_UpdateEmprunt" ,{'id': emprunt.id })}}"> modifier </a></td>
                 <td><a class="btn btn-danger" onclick="return confirm('Etes-vous sûr de supprimer cet emprunt?');" href = "{{ path ("biblio_supprimer_emprunt" ,{'id': emprunt.id })}}"> Supprimer </a></td>
+                {% endif %}
             </tr>
         {% endfor %}
     </table>

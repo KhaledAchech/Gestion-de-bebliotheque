@@ -5,11 +5,21 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/Inc/navbar.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/Inc/navbar.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Resources/views/Inc/sidebar2.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/Inc/sidebar2.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Resources/views/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/Resources/views/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Controller/DocumentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Controller/DocumentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Controller/EmpruntController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Controller/EmpruntController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Entity/Emprunter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Entity/Emprunter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/config/routing.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/config/routing.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Connection/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Connection/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParAuteur.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParAuteur.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParDate.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParDate.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParNom.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParNom.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParType.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Document/rechercheParType.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/Succes.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/Succes.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/list.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/list.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/listByUser.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/listByUser.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/update.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/Emprunter/update.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/SendMessage.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/SendMessage.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/modifyAccount.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/src/BiblioBundle/Resources/views/User/modifyAccount.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +153,7 @@
       <workItem from="1609704338607" duration="4010000" />
       <workItem from="1609708758055" duration="314000" />
       <workItem from="1609749594595" duration="12547000" />
+      <workItem from="1609766912119" duration="2640000" />
     </task>
     <servers />
   </component>

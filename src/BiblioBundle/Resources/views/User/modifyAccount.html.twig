@@ -4,7 +4,9 @@
 
 <form action="" method="POST">
     {{ form_widget(editForm) }}
+    {% if is_granted('ROLE_EDITOR') %}
     <input class ="btn btn-success" type="submit"/>
+    {% endif %}
     <a  class="btn btn-dark" href="{{ path ("biblio_affichage_document")}}"> Retour </a>
 </form>
 {% endblock %}

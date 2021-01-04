@@ -4,7 +4,9 @@
 
     <form action="" method="POST">
         {{ form_widget(editForm) }}
+        {% if is_granted('ROLE_ADMIN') %}
         <input class ="btn btn-success" type="submit"/>
         <a  class="btn btn-dark" href="{{ path ("admin_listEmprunts")}}"> Retour </a>
+        {% endif %}
     </form>
 {% endblock %}

@@ -103,6 +103,7 @@ class EmpruntController extends Controller
 
         return $this->redirectToRoute("admin_listEmprunts");
     }
+
     //Annuler une emprunt
     public function anuulerEmpruntAction(Request $request, $id)
     {

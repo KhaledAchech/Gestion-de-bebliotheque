@@ -7,10 +7,12 @@ namespace BiblioBundle\Controller;
 use BiblioBundle\Form\EditUserRoleForm;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 
 class AdminController extends Controller
 {
+
     //page index de l'admin
     public function indexAction()
     {
@@ -26,6 +28,7 @@ class AdminController extends Controller
             'users'=>$Users
         ));
     }
+
 
     //List des Documents
     public function listDocumentAction()
@@ -58,6 +61,7 @@ class AdminController extends Controller
             'editForm' => $editform->createView()
         ));
     }
+
 
     //Supprimer un Utilisateur
     public function deleteUserAction(Request $request, $id)

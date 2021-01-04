@@ -56,9 +56,11 @@
             <a href = "{{ path ("biblio_recherche_documentparDate")}}">Recherche par Date</a>
         </li>
     </ul>
+    {% if is_granted('ROLE_EDITOR') %}
     <a href="{{ path ("user_listEmprunts")}}">Mes Emprunts</a>
     <a href="{{ path ("user_modifyAccount")}}">Modifier votre compte</a>
     <a href = "{{ path ("send_message_toAdmin")}}">Contact</a>
+    {% endif %}
 </div>
 
 </body>

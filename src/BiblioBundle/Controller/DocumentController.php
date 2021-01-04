@@ -53,6 +53,7 @@ class DocumentController extends Controller
         ));
     }
 
+
     //Ajouter un document
     public function addAction(Request $request)
     {
