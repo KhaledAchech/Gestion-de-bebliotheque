@@ -55,7 +55,7 @@ class Emprunter
     /**
      * @return mixed
      */
-    public function getDocumentEmprunte()
+    public function getDocument_Emprunte()
     {
         return $this->Document_emprunte;
     }
@@ -94,7 +94,7 @@ class Emprunter
     /**
      * @return mixed
      */
-    public function getDateEmp()
+    public function getDate_Emp()
     {
         return $this->date_emp;
     }
@@ -110,6 +110,13 @@ class Emprunter
     /**
      * @return mixed
      */
+    public function getDate_Retour()
+    {
+        return $this->date_retour;
+    }
+    /**
+     * @return mixed
+     */
     public function getDateRetour()
     {
         return $this->date_retour;
@@ -120,7 +127,7 @@ class Emprunter
      */
     public function setDateRetour($date_retour)
     {
-        $this->date_retour = $date_retour + $this->date_emp;
+        $this->date_retour = $date_retour;
     }
 
 

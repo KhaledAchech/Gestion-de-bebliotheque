@@ -1,0 +1,6 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>Document emprunté avec succès</h1>
+    <a class ="btn btn-success" href = "{{ path ("user_listEmprunts")}}"> Mes Empruntes </a>
+    <a  class="btn btn-dark" href="{{ path ("biblio_affichage_document")}}"> Retour </a>
+{% endblock %}

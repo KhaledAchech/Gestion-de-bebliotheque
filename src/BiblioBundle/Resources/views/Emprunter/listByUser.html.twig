@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>Liste des Emprunts</h1>
+    <table border = "1" class="table table-striped">
+        <tr>
+            <th>Id_Emprunt</th>
+            <th>Date emprunt</th>
+            <th>Date Retour</th>
+            <th>Nom Document</th>
+        </tr>
+        {% for emprunt in emprunts %}
+            <tr>
+                <td>{{ emprunt.id }}</td>
+                <td>{{ emprunt.date_emp|date('Y-m-d') }}</td>
+                <td>{{ emprunt.date_retour|date('Y-m-d') }}</td>
+                <td>{{ emprunt.Document_emprunte.nom }}</td>
+                <td><a class="btn btn-danger" onclick="return confirm('Etes-vous sûr de annuler cet emprunt?');" href = "{{ path ("biblio_Annuler_emprunt" ,{'id': emprunt.id })}}"> Annuler </a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

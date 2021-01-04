@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1> Mise à jour d'une Emprunt </h1>
+
+    <form action="" method="POST">
+        {{ form_widget(editForm) }}
+        <input class ="btn btn-success" type="submit"/>
+        <a  class="btn btn-dark" href="{{ path ("admin_listEmprunts")}}"> Retour </a>
+    </form>
+{% endblock %}

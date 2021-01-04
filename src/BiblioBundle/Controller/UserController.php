@@ -47,26 +47,6 @@ class UserController extends Controller
         return $this->render('@Biblio/User/SendMessage.html.twig');
     }
 
-    //Emprunter un Document
-    public function empruntDocumentAction(){
-            $emprunter = new Emprunter();
-
-            $em = $this->getDoctrine()->getManager();
-            /*$document = $em->getRepository('BiblioBundle:Emprunt')->find($id);
-            if ($document != null)
-            {
-                throw Exception::class("Document déja emprunter");
-            }
-            else
-            {
-            $emprunter->setDateEmp(date());
-            $emprunter->setDateRetour($emprunter->getDateEmp()->add(new DateInterval('P30D')));
-            $em->persist($emprunter);
-            $em->flush();
-            }
-            return $this->redirect($this->generateUrl("biblio_emprunter_document"));
-        */
-        }
 
 
 }

@@ -22,7 +22,7 @@
         .sidenav a {
             padding: 6px 8px 6px 16px;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 15px;
             color: #f6f6f6;
             display: block;
         }
@@ -56,6 +56,7 @@
             <a href = "{{ path ("biblio_recherche_documentparDate")}}">Recherche par Date</a>
         </li>
     </ul>
+    <a href="{{ path ("user_listEmprunts")}}">Mes Emprunts</a>
     <a href="{{ path ("user_modifyAccount")}}">Modifier votre compte</a>
     <a href = "{{ path ("send_message_toAdmin")}}">Contact</a>
 </div>

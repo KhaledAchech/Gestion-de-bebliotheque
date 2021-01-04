@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-3">
 <div class = "container">
     <a  href="{{ path ("biblio_affichage_document")}}" class = "navbar-brand" > Bibliothéque Tek up</a>
     <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#mobile-nav">
@@ -11,13 +11,16 @@
                 <a href="{{ path ("biblio_ajout_document")}}" class="nav-link">Ajouter Document</a>
             </li >
             <li class="nav-item">
-            <a href="{{ path ("admin_listUsers")}}" class="nav-link">Consulter les utilisateurs</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Consulter les emprunts</a>
-            </li>
-            <li class="nav-item">
                 <a href = "{{ path ("biblio_inscription_user")}}" class="nav-link"> Ajouter un Utilisateur </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ path ("biblio_affichage_document")}}" class="nav-link">Les documents</a>
+            </li>
+            <li class="nav-item">
+            <a href="{{ path ("admin_listUsers")}}" class="nav-link">Les utilisateurs</a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ path ("admin_listEmprunts")}}" class="nav-link">Les emprunts</a>
             </li>
             <li class="nav-item">
                 <a href = "{{ path ("biblio_deconnexion_user")}}" class="nav-link"> Deconnexion </a>
